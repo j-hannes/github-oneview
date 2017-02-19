@@ -12,7 +12,6 @@ class HelloMessage extends React.Component {
   }
 }
 
-render(
-  <HelloMessage name='App' />,
-  document.getElementById('root')
-)
+const root = document.createElement('div', 'root')
+document.body.appendChild(root)
+render(<HelloMessage name='App' />, root)
