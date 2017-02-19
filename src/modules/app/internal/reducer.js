@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux'
 
-import contentList from 'modules/content-list'
+import * as contentList from 'modules/content-list'
 
 const initialState = {} // TODO use immutable reducer
 

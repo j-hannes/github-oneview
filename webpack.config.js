@@ -17,7 +17,10 @@ module.exports = {
     ]
   },
   resolve: {
-    modules: ['src', 'node_modules']
+    modules: [
+      path.resolve(__dirname, 'src'),
+      'node_modules'
+    ]
   },
   plugins: [new HtmlWebpackPlugin({
     title: 'Github Oneview'
