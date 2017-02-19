@@ -1,8 +1,10 @@
-import { combineReducers } from 'redux'
+import { combineReducers } from 'redux-immutable'
+import { Record } from 'immutable'
 
 import * as contentList from 'modules/content-list'
 
-const initialState = {} // TODO use immutable reducer
+const initialState = new Record({
+})
 
 const app = (state = initialState, action) => {
   switch (action.type) {

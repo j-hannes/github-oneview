@@ -4,13 +4,13 @@ import { Provider } from 'react-redux'
 import { createStore } from 'redux'
 import { App, reducer } from 'modules/app'
 
-const store = createStore(reducer)
-
 const root = document.createElement('div', 'root')
 document.body.appendChild(root)
 render(
-  <Provider store={store}>
+  <Provider store={createStore(reducer)}>
     <App />
   </Provider>,
   root
 )
+
+window.log = x => { console.log(x); return x }
