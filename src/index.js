@@ -1,17 +1,7 @@
 import React from 'react'
 import { render } from 'react-dom'
-
-class HelloMessage extends React.Component {
-  render () {
-    return (
-      <div>
-        Hello
-        {' ' + this.props.name}
-      </div>
-    )
-  }
-}
+import { App } from 'modules/app'
 
 const root = document.createElement('div', 'root')
 document.body.appendChild(root)
-render(<HelloMessage name='App' />, root)
+render(<App />, root)
