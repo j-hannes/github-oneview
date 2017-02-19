@@ -1,4 +1,18 @@
-const message = 'Hello App!!'
+import React from 'react'
+import { render } from 'react-dom'
 
-console.log(message)
-document.getElementById('root').innerHTML = message
+class HelloMessage extends React.Component {
+  render () {
+    return (
+      <div>
+        Hello
+        {' ' + this.props.name}
+      </div>
+    )
+  }
+}
+
+render(
+  <HelloMessage name='App' />,
+  document.getElementById('root')
+)
