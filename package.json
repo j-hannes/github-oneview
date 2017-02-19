@@ -6,6 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --open",
     "test": "jest",
+    "lint": "eslint src",
     "build": "webpack"
   },
   "dependencies": {
