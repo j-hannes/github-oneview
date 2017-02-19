@@ -21,5 +21,6 @@ module.exports = {
   },
   plugins: [new HtmlWebpackPlugin({
     title: 'Github Oneview'
-  })]
+  })],
+  devtool: 'eval-source-map'
 }
