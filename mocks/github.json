@@ -1,0 +1,132 @@
+{
+  "contents": [
+    {
+      "_links": {
+        "git": "https://api.github.com/repos/j-hannes/github-oneview/git/blobs/f7b7ea196bef436244b69198a532e4c64cee8c91",
+        "html": "https://github.com/j-hannes/github-oneview/blob/master/.babelrc",
+        "self": "https://api.github.com/repos/j-hannes/github-oneview/contents/.babelrc?ref=master"
+      },
+      "download_url": "https://raw.githubusercontent.com/j-hannes/github-oneview/master/.babelrc",
+      "git_url": "https://api.github.com/repos/j-hannes/github-oneview/git/blobs/f7b7ea196bef436244b69198a532e4c64cee8c91",
+      "html_url": "https://github.com/j-hannes/github-oneview/blob/master/.babelrc",
+      "name": ".babelrc",
+      "path": ".babelrc",
+      "sha": "f7b7ea196bef436244b69198a532e4c64cee8c91",
+      "size": 70,
+      "type": "file",
+      "url": "https://api.github.com/repos/j-hannes/github-oneview/contents/.babelrc?ref=master"
+    },
+    {
+      "_links": {
+        "git": "https://api.github.com/repos/j-hannes/github-oneview/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+        "html": "https://github.com/j-hannes/github-oneview/blob/master/.eslintignore",
+        "self": "https://api.github.com/repos/j-hannes/github-oneview/contents/.eslintignore?ref=master"
+      },
+      "download_url": "https://raw.githubusercontent.com/j-hannes/github-oneview/master/.eslintignore",
+      "git_url": "https://api.github.com/repos/j-hannes/github-oneview/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "html_url": "https://github.com/j-hannes/github-oneview/blob/master/.eslintignore",
+      "name": ".eslintignore",
+      "path": ".eslintignore",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "type": "file",
+      "url": "https://api.github.com/repos/j-hannes/github-oneview/contents/.eslintignore?ref=master"
+    },
+    {
+      "_links": {
+        "git": "https://api.github.com/repos/j-hannes/github-oneview/git/blobs/e7aca4120ead09814b05809cdc147375bf291a12",
+        "html": "https://github.com/j-hannes/github-oneview/blob/master/.eslintrc.yml",
+        "self": "https://api.github.com/repos/j-hannes/github-oneview/contents/.eslintrc.yml?ref=master"
+      },
+      "download_url": "https://raw.githubusercontent.com/j-hannes/github-oneview/master/.eslintrc.yml",
+      "git_url": "https://api.github.com/repos/j-hannes/github-oneview/git/blobs/e7aca4120ead09814b05809cdc147375bf291a12",
+      "html_url": "https://github.com/j-hannes/github-oneview/blob/master/.eslintrc.yml",
+      "name": ".eslintrc.yml",
+      "path": ".eslintrc.yml",
+      "sha": "e7aca4120ead09814b05809cdc147375bf291a12",
+      "size": 532,
+      "type": "file",
+      "url": "https://api.github.com/repos/j-hannes/github-oneview/contents/.eslintrc.yml?ref=master"
+    },
+    {
+      "_links": {
+        "git": "https://api.github.com/repos/j-hannes/github-oneview/git/blobs/15cbea295955321acf26f89852c52283427ddb0b",
+        "html": "https://github.com/j-hannes/github-oneview/blob/master/.gitignore",
+        "self": "https://api.github.com/repos/j-hannes/github-oneview/contents/.gitignore?ref=master"
+      },
+      "download_url": "https://raw.githubusercontent.com/j-hannes/github-oneview/master/.gitignore",
+      "git_url": "https://api.github.com/repos/j-hannes/github-oneview/git/blobs/15cbea295955321acf26f89852c52283427ddb0b",
+      "html_url": "https://github.com/j-hannes/github-oneview/blob/master/.gitignore",
+      "name": ".gitignore",
+      "path": ".gitignore",
+      "sha": "15cbea295955321acf26f89852c52283427ddb0b",
+      "size": 25,
+      "type": "file",
+      "url": "https://api.github.com/repos/j-hannes/github-oneview/contents/.gitignore?ref=master"
+    },
+    {
+      "_links": {
+        "git": "https://api.github.com/repos/j-hannes/github-oneview/git/blobs/9d3ac0493f198b91b129b2c5c55e7dbf4532215e",
+        "html": "https://github.com/j-hannes/github-oneview/blob/master/README.md",
+        "self": "https://api.github.com/repos/j-hannes/github-oneview/contents/README.md?ref=master"
+      },
+      "download_url": "https://raw.githubusercontent.com/j-hannes/github-oneview/master/README.md",
+      "git_url": "https://api.github.com/repos/j-hannes/github-oneview/git/blobs/9d3ac0493f198b91b129b2c5c55e7dbf4532215e",
+      "html_url": "https://github.com/j-hannes/github-oneview/blob/master/README.md",
+      "name": "README.md",
+      "path": "README.md",
+      "sha": "9d3ac0493f198b91b129b2c5c55e7dbf4532215e",
+      "size": 16,
+      "type": "file",
+      "url": "https://api.github.com/repos/j-hannes/github-oneview/contents/README.md?ref=master"
+    },
+    {
+      "_links": {
+        "git": "https://api.github.com/repos/j-hannes/github-oneview/git/blobs/f8f96c2c3c5fa40ddcab99c2ddbd1d4c710859b0",
+        "html": "https://github.com/j-hannes/github-oneview/blob/master/package.json",
+        "self": "https://api.github.com/repos/j-hannes/github-oneview/contents/package.json?ref=master"
+      },
+      "download_url": "https://raw.githubusercontent.com/j-hannes/github-oneview/master/package.json",
+      "git_url": "https://api.github.com/repos/j-hannes/github-oneview/git/blobs/f8f96c2c3c5fa40ddcab99c2ddbd1d4c710859b0",
+      "html_url": "https://github.com/j-hannes/github-oneview/blob/master/package.json",
+      "name": "package.json",
+      "path": "package.json",
+      "sha": "f8f96c2c3c5fa40ddcab99c2ddbd1d4c710859b0",
+      "size": 1341,
+      "type": "file",
+      "url": "https://api.github.com/repos/j-hannes/github-oneview/contents/package.json?ref=master"
+    },
+    {
+      "_links": {
+        "git": "https://api.github.com/repos/j-hannes/github-oneview/git/trees/ad6de9c8e40c5ce2b12f75e0df1d6dd42a02158e",
+        "html": "https://github.com/j-hannes/github-oneview/tree/master/src",
+        "self": "https://api.github.com/repos/j-hannes/github-oneview/contents/src?ref=master"
+      },
+      "download_url": null,
+      "git_url": "https://api.github.com/repos/j-hannes/github-oneview/git/trees/ad6de9c8e40c5ce2b12f75e0df1d6dd42a02158e",
+      "html_url": "https://github.com/j-hannes/github-oneview/tree/master/src",
+      "name": "src",
+      "path": "src",
+      "sha": "ad6de9c8e40c5ce2b12f75e0df1d6dd42a02158e",
+      "size": 0,
+      "type": "dir",
+      "url": "https://api.github.com/repos/j-hannes/github-oneview/contents/src?ref=master"
+    },
+    {
+      "_links": {
+        "git": "https://api.github.com/repos/j-hannes/github-oneview/git/blobs/fbcea722b34d4d9626f7cd199609a98159cf9d2a",
+        "html": "https://github.com/j-hannes/github-oneview/blob/master/webpack.config.js",
+        "self": "https://api.github.com/repos/j-hannes/github-oneview/contents/webpack.config.js?ref=master"
+      },
+      "download_url": "https://raw.githubusercontent.com/j-hannes/github-oneview/master/webpack.config.js",
+      "git_url": "https://api.github.com/repos/j-hannes/github-oneview/git/blobs/fbcea722b34d4d9626f7cd199609a98159cf9d2a",
+      "html_url": "https://github.com/j-hannes/github-oneview/blob/master/webpack.config.js",
+      "name": "webpack.config.js",
+      "path": "webpack.config.js",
+      "sha": "fbcea722b34d4d9626f7cd199609a98159cf9d2a",
+      "size": 556,
+      "type": "file",
+      "url": "https://api.github.com/repos/j-hannes/github-oneview/contents/webpack.config.js?ref=master"
+    }
+  ]
+}
