@@ -1,4 +1,4 @@
-import { Record, Map } from 'immutable'
+import { Record } from 'immutable'
 
 const initialState = new Record({
   name: 'One'

@@ -1,16 +1,16 @@
+import 'rxjs'
 import React from 'react'
 import { render } from 'react-dom'
 import { Provider } from 'react-redux'
-import { createStore } from 'redux'
-import { App, reducer } from 'modules/app'
+import { App, configureStore } from 'modules/app'
+
+window.log = x => { console.log(x); return x }
 
 const root = document.createElement('div', 'root')
 document.body.appendChild(root)
 render(
-  <Provider store={createStore(reducer)}>
+  <Provider store={configureStore()}>
     <App />
   </Provider>,
   root
 )
-
-window.log = x => { console.log(x); return x }

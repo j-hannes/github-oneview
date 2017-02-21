@@ -1,4 +1,4 @@
 import App from './internal/components/App'
-import reducer from './internal/reducer'
+import configureStore from './internal/configureStore'
 
-export { App, reducer }
+export { App, configureStore }
