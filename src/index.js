@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.css'
 import 'rxjs'
 import React from 'react'
 import { render } from 'react-dom'
