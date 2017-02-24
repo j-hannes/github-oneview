@@ -13,3 +13,8 @@ export const updateRepo = (repo) => ({
     repo
   }
 })
+
+export const submitForm = () => ({
+  type: actionTypes.SUBMIT_FORM,
+  payload: {}
+})

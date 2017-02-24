@@ -2,30 +2,42 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { createStructuredSelector } from 'reselect'
 
-import { getUser, getRepo } from '../selectors'
-import { updateUser, updateRepo } from '../actions'
+import { withTargetValue } from 'utils/form'
+import { structureProps } from 'utils/redux'
 
-const SelectRepo = props =>
+import { getUser, getRepo } from '../selectors'
+import {
+  updateUser,
+  updateRepo,
+  submitForm
+} from '../actions'
+
+const SelectRepo = ({ store, actions }) =>
   <div>
     <input
       id='user'
-      value={props.user}
-      onChange={props.updateUser}
+      value={store.user}
+      onChange={withTargetValue(actions.updateUser)}
     />
     <input
       id='repo'
-      value={props.repo}
-      onChange={props.updateRepo}
+      value={store.repo}
+      onChange={withTargetValue(actions.updateRepo)}
     />
-    <button>Load</button>
+    <button onClick={actions.submitForm}>
+      Load
+    </button>
   </div>
 
 export default connect(
   createStructuredSelector({
     user: getUser,
     repo: getRepo
-  }), (dispatch) => ({
-    updateUser (e) { dispatch(updateUser(e.target.value)) },
-    updateRepo (e) { dispatch(updateRepo(e.target.value)) }
-  })
+  }),
+  {
+    updateUser,
+    updateRepo,
+    submitForm
+  },
+  structureProps
 )(SelectRepo)
