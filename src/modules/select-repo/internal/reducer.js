@@ -2,8 +2,8 @@ import { Record } from 'immutable'
 import * as actionTypes from './actionTypes'
 
 const initialState = new Record({
-  user: '',
-  repo: ''
+  user: 'j-hannes',
+  repo: 'github-oneview'
 })()
 
 export default (state = initialState, action) => {
