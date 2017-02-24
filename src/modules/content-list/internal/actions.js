@@ -11,6 +11,7 @@ export const requestContents = (user, repo) => ({
 export const receiveContents = (data) => {
   console.log('from receiveContents', data)
   return ({
-    type: actionTypes.REPO_CONTENTS_SUCCESS // FIXME
+    type: actionTypes.REPO_CONTENTS_SUCCESS,
+    payload: { data }
   })
 }
