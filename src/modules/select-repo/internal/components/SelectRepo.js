@@ -2,7 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { createStructuredSelector } from 'reselect'
 
-import { withTargetValue } from 'utils/form'
+import { withTargetValue, preventDefault } from 'utils/form'
 import { structureProps } from 'utils/redux'
 
 import { getUser, getRepo } from '../selectors'
@@ -12,22 +12,40 @@ import {
   submitForm
 } from '../actions'
 
+import './SelectRepo.css'
+
 const SelectRepo = ({ store, actions }) =>
-  <div>
+  <form
+    className='select-repo-form'
+    onSubmit={preventDefault(actions.submitForm)}
+  >
+
     <input
       id='user'
+      type='text'
+      className='form-control select-repo-input'
+      placeholder='Username'
       value={store.user}
       onChange={withTargetValue(actions.updateUser)}
     />
+
     <input
       id='repo'
+      type='text'
+      className='form-control select-repo-input'
+      placeholder='Repository'
       value={store.repo}
       onChange={withTargetValue(actions.updateRepo)}
     />
-    <button onClick={actions.submitForm}>
-      Load
+
+    <button
+      type='submit'
+      className='btn btn-default select-repo-input'
+    >
+      Load Contents
     </button>
-  </div>
+
+  </form>
 
 export default connect(
   createStructuredSelector({
