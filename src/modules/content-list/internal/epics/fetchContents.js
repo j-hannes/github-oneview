@@ -3,14 +3,16 @@ import { receiveContents } from '../actions'
 import * as selectRepo from 'modules/select-repo'
 import { compose, map, pick } from 'ramda'
 
-const serverCall = ({ user, repo }) =>
-  ajax.getJSON(`https://api.github.com/repos/${user}/${repo}/contents`)
-
+const { SUBMIT_FORM } = selectRepo.actionTypes
+const getSelectRepo = store => () => store.getState().get(selectRepo.name)
 const selectProps = compose(map, pick)
 
+const githubApiCall = ({ user, repo }) =>
+  ajax.getJSON(`https://api.github.com/repos/${user}/${repo}/contents`)
+
 export const fetchContents = (action$, store) =>
-  action$.ofType(selectRepo.actionTypes.SUBMIT_FORM)
-    .map(() => store.getState().get(selectRepo.name))
-    .flatMap(serverCall)
+  action$.ofType(SUBMIT_FORM)
+    .map(getSelectRepo(store))
+    .flatMap(githubApiCall)
     .map(selectProps(['name', 'sha']))
     .map(receiveContents)
