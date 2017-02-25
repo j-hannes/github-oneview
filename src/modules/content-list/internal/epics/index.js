@@ -1,1 +1,1 @@
-export { default as fetchContents } from './fetchContents'
+export { fetchContents } from './fetchContents'
