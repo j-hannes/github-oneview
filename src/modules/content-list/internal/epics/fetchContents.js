@@ -9,5 +9,5 @@ export const fetchContents = (action$, store) =>
   action$.ofType(selectRepo.actionTypes.SUBMIT_FORM)
     .map(() => store.getState().get(selectRepo.name))
     .flatMap(serverCall)
-    .map(contentList => contentList.map(({ name }) => ({ name })))
+    .map(contentList => contentList.map(({ name, sha }) => ({ name, sha })))
     .map(receiveContents)

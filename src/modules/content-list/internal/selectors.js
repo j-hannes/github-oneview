@@ -3,7 +3,7 @@ import { name } from './constants'
 
 export const getAll = state => state.get(name)
 
-export const getName = createSelector(
+export const getContents = createSelector(
   getAll,
-  state => state.name
+  state => state.contents
 )

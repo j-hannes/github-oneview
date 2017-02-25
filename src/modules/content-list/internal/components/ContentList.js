@@ -2,15 +2,17 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { createStructuredSelector } from 'reselect'
 
-import { getName } from '../selectors'
+import { getContents } from '../selectors'
 
 const ContentList = props =>
   <ul>
-    <li>{props.name}</li>
+    {props.contents.map(item =>
+      <li key={item.sha}>{item.name}</li>
+    )}
   </ul>
 
 export default connect(
   createStructuredSelector({
-    name: getName
+    contents: getContents
   })
 )(ContentList)
