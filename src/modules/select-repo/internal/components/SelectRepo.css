@@ -1,15 +1,17 @@
 .select-repo-form {
   display: flex;
+  margin-bottom: 12px;
 }
 
 .select-repo-input {
-  margin: 10px 5px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .select-repo-input:first-child {
-  margin-left: 10px;
+  margin-left: 0;
 }
 
 .select-repo-input:last-child {
-  margin-right: 10px;
+  margin-right: 0;
 }

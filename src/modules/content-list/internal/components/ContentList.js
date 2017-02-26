@@ -5,11 +5,17 @@ import { createStructuredSelector } from 'reselect'
 import { getContents } from '../selectors'
 
 const ContentList = props =>
-  <ul>
+  <div className='list-group'>
     {props.contents.map(item =>
-      <li key={item.sha}>{item.name}</li>
+      <button
+        key={item.sha}
+        style={{ outline: 'none' }}
+        className='list-group-item'
+      >
+        {item.name}
+      </button>
     )}
-  </ul>
+  </div>
 
 export default connect(
   createStructuredSelector({
