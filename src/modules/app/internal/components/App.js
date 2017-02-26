@@ -10,7 +10,7 @@ const style = {
   }
 }
 
-class App extends React.Component {
+class App extends React.PureComponent {
   render () {
     return (
       <div>
