@@ -10,9 +10,15 @@ const selectProps = compose(map, pick)
 const githubApiCall = ({ user, repo }) =>
   ajax.getJSON(`https://api.github.com/repos/${user}/${repo}/contents`)
 
+const sortDirsFirst = contents => [
+  ...contents.filter(item => item.type === 'dir'),
+  ...contents.filter(item => item.type !== 'dir')
+]
+
 export const fetchContents = (action$, store) =>
   action$.ofType(SUBMIT_FORM)
     .map(getSelectRepo(store))
     .flatMap(githubApiCall)
+    .map(sortDirsFirst)
     .map(selectProps(['name', 'sha']))
     .map(receiveContents)
